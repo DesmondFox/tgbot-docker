@@ -1,0 +1,11 @@
+version: '1'
+
+services: 
+  tgbot:
+    build: .
+    ports:
+      - "80:80"
+    env_file:
+      - .env
+
+    
