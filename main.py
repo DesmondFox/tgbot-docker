@@ -14,10 +14,10 @@ def start(message):
 def time(message):
     bot.reply_to(message, "Time is: " + str(datetime.datetime.now()))
 
-@bot.message_handler(func=lambda message: True)
-def echo_all(message):
-    bot.reply_to(message, message.text)
-    print("On message: ", message.text)
+# @bot.message_handler(func=lambda message: True)
+# def echo_all(message):
+#     bot.reply_to(message, message.text)
+#     print("On message: ", message.text)
 
 
 bot.infinity_polling()
